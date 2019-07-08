@@ -21,11 +21,8 @@ class UsersTableSeeder extends Seeder
             ]
         ];
 
-        $now = now();
         foreach ($users as $user){
-            $user['created_at'] = $now;
-            $user['updated_at'] = $now;
-            User::insert($user);
+            User::create($user);
         }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Policies\Settings;
+namespace App\Policies\System;
 
 use App\Policies\Policy;
 use App\Role;

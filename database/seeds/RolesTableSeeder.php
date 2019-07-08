@@ -27,11 +27,9 @@ class RolesTableSeeder extends Seeder
             ],
 
         ];
-        $now = now();
+
         foreach ($roles as $role){
-            $user['created_at'] = $now;
-            $user['updated_at'] = $now;
-            Role::insert($role);
+            Role::create($role);
         }
     }
 }
