@@ -4,6 +4,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Application level configurations
+    |--------------------------------------------------------------------------
+    */
+
+    'system_admin_access_level' => 1000,
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Name
     |--------------------------------------------------------------------------
     |
@@ -175,6 +183,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        /**
+         * Packages providers
+         */
+        Jeylabs\AuditLog\AuditLogServiceProvider::class
     ],
 
     /*
