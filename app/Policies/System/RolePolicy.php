@@ -7,7 +7,7 @@ use App\Role;
 
 /**
  * Class RolePolicy
- * @package App\Policies\Settings
+ * @package App\Policies\System
  * @property bool $check
  * @property array $replace
  * @property array $policies
