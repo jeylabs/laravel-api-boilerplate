@@ -17,15 +17,20 @@ class UserController
      *      tags={"user"},
      *      summary="Logged in user info",
      *      description="Returns Logged in user info",
-     *      @OA\Response(
-     *          response=200,
-     *          description="successful operation"
-     *       ),
-     *       @OA\Response(response=400, description="Bad request"),
-     *       security={
-     *           {"api_key_security_example": {}}
-     *       }
-     *     )
+     *     @OA\Response(
+     *         response=200,
+     *         description="successful operation",
+     *         @OA\JsonContent(ref="#/components/schemas/User"),
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Invalid username supplied"
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="User not found"
+     *     ),
+     * )
      *
      * Returns list of projects
      */
