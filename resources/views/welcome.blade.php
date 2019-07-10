@@ -84,7 +84,7 @@
                     {{ config('app.name') }} API Service
                 </div>
                 <div class="links">
-                    <a href="#">Docs</a>
+                    <a href="/api/documentation">Docs</a>
                 </div>
             </div>
         </div>

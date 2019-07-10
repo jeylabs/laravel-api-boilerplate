@@ -187,7 +187,8 @@ return [
         /**
          * Packages providers
          */
-        Jeylabs\AuditLog\AuditLogServiceProvider::class
+        Jeylabs\AuditLog\AuditLogServiceProvider::class,
+        L5Swagger\L5SwaggerServiceProvider::class,
     ],
 
     /*
